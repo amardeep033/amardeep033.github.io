@@ -9,7 +9,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff; /* all links white by default */
+    color: #fff; /* default white for all links */
 }
 
 /* ------------------ Container ------------------ */
@@ -18,7 +18,7 @@ a {
     margin: 50px auto;
     padding: 30px;
     background-color: #111; /* dark grey container */
-    border: 2px solid #fff; /* white border for retro feel */
+    border: 2px solid #fff; /* white border */
     border-radius: 8px;
     text-align: center;
 }
@@ -30,7 +30,7 @@ a {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 2px solid #fff; /* retro white border */
+    border: 2px solid #fff; /* white border */
 }
 
 /* ------------------ Headings ------------------ */
@@ -38,7 +38,7 @@ h1 {
     margin-bottom: 15px;
     font-size: 2em;
     color: #fff;
-    text-shadow: 1px 1px 0 #000; /* subtle retro shadow */
+    text-shadow: 1px 1px 0 #000;
 }
 
 h2 {
@@ -61,17 +61,7 @@ p {
     margin-top: 25px;
 }
 
-/* Email and Phone as plain links */
-.contacts p a {
-    color: #fff;
-    font-weight: bold;
-}
-
-.contacts p a:hover {
-    text-decoration: underline;
-}
-
-/* Social links as retro buttons */
+/* Social links as black-and-white buttons */
 .contacts .social-link {
     display: inline-block;
     margin: 8px 12px;
@@ -80,7 +70,7 @@ p {
     color: #000; /* black text */
     background-color: #fff; /* white button */
     font-weight: bold;
-    border-radius: 4px; /* sharper corners for retro feel */
+    border-radius: 4px; /* retro sharp corners */
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
@@ -89,6 +79,16 @@ p {
     color: #fff;
     transform: translateY(-2px);
     border: 1px solid #fff;
+}
+
+/* Footer-style email and phone */
+.contacts p.footer-links a {
+    color: #fff;
+    font-weight: normal;
+}
+
+.contacts p.footer-links a:hover {
+    text-decoration: underline;
 }
 
 /* ------------------ Responsive ------------------ */
